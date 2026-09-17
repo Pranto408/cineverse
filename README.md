@@ -2,6 +2,8 @@
 
 A responsive Movie Explorer app built with React and Tailwind CSS. Browse movies, search by title, and view detailed info in a modal.
 
+Live Demo: [https://startling-parfait-118dc8.netlify.app](https://startling-parfait-118dc8.netlify.app)
+
 ## Features
 
 - Home page with hero banner
