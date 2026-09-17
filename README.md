@@ -1,16 +1,46 @@
-# React + Vite
+# CineVerse
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive Movie Explorer app built with React and Tailwind CSS. Browse movies, search by title, and view detailed info in a modal.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Home page with hero banner
+- Movie listing page with live search
+- Responsive movie grid (poster, title, year, rating)
+- Movie details modal (summary, rating, genre, network)
+- Fully responsive design (mobile and desktop)
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Tailwind CSS
+- React Router
+- Lucide React (icons)
+- TVMaze API
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Install dependencies:
+
+```
+npm install
+```
+
+Run the app in development mode:
+
+```
+npm run dev
+```
+
+Build for production:
+
+```
+npm run build
+```
+
+## API Used
+
+This project uses the free [TVMaze API](https://www.tvmaze.com/api):
+
+- `GET /shows` - fetch all shows
+- `GET /search/shows?q=:query` - search shows by title
